@@ -232,9 +232,7 @@ v	}
     // load and apply last saved control scheme
     //
     if (logline.indexOf("entered the game") > 0) {
-	this.controls.loadSavedControls();
-	this.controls.writeControls();
-	this.controls.applyControls();
+	
     }
 
     //
@@ -244,6 +242,12 @@ v	}
       if (logline.indexOf("entered the game") > 0) {
         let name = this.app.wallet.returnPublicKey().toLowerCase();
 	this.registerPlayerName();
+	      
+	// load & apply saved controls while here
+	// since this block only happens on client startup
+	this.controls.loadSavedControls();
+	this.controls.writeControls();
+	this.controls.applyControls();
       }
     }
 
