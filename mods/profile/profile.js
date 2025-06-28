@@ -20,9 +20,9 @@ class Profile extends ModTemplate {
 
 	    this.social = {
 	      twitter: '@SaitoOfficial',
-	      title: '🟥 Saito User - Web3 Social Media',
+	      title: '🟥 Saito User - Open Internet Social Media',
 	      url: 'https://saito.io/redsquare#profile',
-	      description: 'Peer to peer Web3 social media platform',
+	      description: 'Open Internet Social Media',
 	      image: 'https://saito.tech/wp-content/uploads/2022/04/saito_card.png' //square image with "Saito" below logo
 	    };
 
